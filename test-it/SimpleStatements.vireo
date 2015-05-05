@@ -1,0 +1,36 @@
+// New symbols can be defined in a context using
+// Assigments and declarations
+
+
+// Assignments establish symbols with mutable values.
+// structure of the symbol is still immutable once established.
+Var1 <- 5           // Numeric literal implies Int32
+Var2 <- Int32
+Var3 <- Int8(5)     // Using Simple type in functional from
+
+Var1 <- 4           // Reassigning values is to be expected
+Var1 <- "Hello"     // error, new values must match existing structure
+
+Var4 <- Variant
+Var4 <- 5           // Variants can hold different types.
+Var4 <- "Hello"     // OK since base type is variant
+
+VarStr <- "Hello"
+VarStr <- "How are you?"
+
+// Declarations are immutable
+Const1 = 5          // Error: ambigious value
+Const1 = 4          // Error: ambigious value
+MyType = Int32      // roughly a typedef in C/C++
+
+// Simple array initializers
+Const3 = (1 2 3)    // Via style array
+Const4 = [1,2,3]    // JSON style array
+Const5 = {1,2,3}    // C style array (or cluster)
+
+// All lines are considered part fo the problem
+// since a speciic order is not assumed.
+Var5 <- Int32       // Error: ambiguious structure
+Var5 <- Double      // Error: ambiguious structure
+Var5 <- "Hello"     // Error: ambiguious structure
+Var5 <- true        // Error: ambiguious structure

@@ -1,2 +1,2 @@
 # Vireo
-The user level program language that targets the VireoSDK
+The user level programming language that targets the VireoSDK.
