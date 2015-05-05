@@ -10,6 +10,7 @@ the structure
 
 ### Grammar for Vireo script files
 
+~~~{.ebnf}
 symbol_expression       := ( value_literal
                             | type_literal
                             | symbol )
