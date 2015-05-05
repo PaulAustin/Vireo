@@ -1,7 +1,7 @@
-## EBNF gramar for Vireo script files
+## EBNF grammar for Vireo script files
 
 Symbols are the core. All Symbols have a strucure, the structure holds
-bits. the bits interpreted via encoding defined with the structure
+bits. The bits are interpreted by an encoding defined with the structure
 make a value.
 
 Symbols can be defined from the perpsective of a value, or by describing
